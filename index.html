@@ -17,6 +17,17 @@
             <a href="#about" class="item">About</a>
             <a href="#project" class="item">Projects</a>
             <a href="#contact" class="item">Contact</a>
+            <span id="hamburger-menu">&#9776;</span>
+            <script>
+
+                document.getElementById('hamburger-menu').addEventListener('click', function () {
+                    document.querySelector('.nav').classList.toggle('mobile-nav');
+                    document.querySelector('.main-content').classList.toggle('move-down');
+                });
+
+
+
+            </script>
         </div>
         <!-- Hero -Container -->
         <div class="hero-container">
