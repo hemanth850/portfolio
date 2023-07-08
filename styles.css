@@ -344,6 +344,38 @@ body {}
     font-size: 1rem;
 }
 
+/* Certifications Section */
+
+.certificate-section{
+    position: relative;
+    padding: 80px 0;
+    background: url(assets/background-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.certificate-title{
+    position: absolute;
+    overflow: hidden;
+    font-size: 6em;
+    color: rgba(231, 231, 231, 0.378);
+    font-weight: 900;
+
+    top: -34px;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+
 .contact-section {
     position: relative;
 
@@ -805,6 +837,30 @@ body {}
 
 
 
+
+
+    .certificate-section{
+        position: relative;
+        padding: 80px 0;
+        background: url(assets/background-1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
+    
+    .certificate-title{
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        
+        font-size: 3em;
+        color: rgba(231, 231, 231, 0.419);
+        font-weight: 900;
+    
+        top: -20px;
+        user-select: none;
+    }
 
 
     .contact-section {
