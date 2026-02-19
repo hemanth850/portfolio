@@ -995,3 +995,192 @@ body {}
 
 
   }
+
+/* Creative refresh: modern project storytelling + image treatment */
+
+body {
+    background: #090b16;
+}
+
+.hero-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 18% 30%, rgba(12, 182, 205, 0.18), transparent 34%),
+        radial-gradient(circle at 84% 72%, rgba(245, 103, 109, 0.18), transparent 32%),
+        linear-gradient(135deg, rgba(7, 10, 25, 0.42), rgba(22, 10, 40, 0.55));
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 740px;
+}
+
+.bold-text {
+    letter-spacing: 1px;
+    text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+
+.text-normal {
+    line-height: 1.45;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.project-section {
+    background-position: center;
+}
+
+.grid-container {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.grid-item {
+    filter: grayscale(0.2) contrast(1.05) saturate(1.1);
+}
+
+.project-showcase {
+    width: min(1200px, 92%);
+    margin: 4rem auto 1rem;
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+}
+
+.project-showcase .project-card {
+    width: 100%;
+    margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(3px);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-showcase .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+    border-color: rgba(93, 216, 255, 0.62);
+}
+
+.project-showcase .project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    filter: saturate(0.9) contrast(1.04) brightness(0.92);
+    transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.project-showcase .project-card:hover img {
+    transform: scale(1.08);
+    filter: saturate(1.08) contrast(1.08) brightness(1);
+    box-shadow: none;
+    margin: 0;
+}
+
+.project-copy {
+    padding: 0.95rem 1rem 1.2rem;
+    text-align: left;
+}
+
+.project-copy i {
+    font-size: 1.5rem;
+    margin-bottom: 0.55rem;
+    color: #9fd8ff;
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 1.08rem;
+    line-height: 1.35;
+    margin-bottom: 0.45rem;
+}
+
+.project-desc {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 0.7rem;
+}
+
+.project-stack {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    color: #c9f0ff;
+    border: 1px solid rgba(160, 225, 255, 0.45);
+    border-radius: 999px;
+    padding: 0.3rem 0.65rem;
+    background: rgba(17, 40, 70, 0.36);
+}
+
+.featured-card {
+    background: linear-gradient(160deg, rgba(45, 75, 122, 0.33), rgba(90, 43, 137, 0.3));
+}
+
+@media only screen and (max-width: 649px) {
+    .nav {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        padding: 0.85rem 1rem;
+        background: rgba(8, 10, 22, 0.7);
+        backdrop-filter: blur(6px);
+    }
+
+    .item {
+        display: inline-block;
+        font-size: 0.88rem;
+        color: #e9f2ff;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    #hamburger-menu {
+        display: none !important;
+    }
+
+    .hero-content {
+        top: 7rem;
+    }
+
+    .text-normal {
+        font-size: 1.08rem;
+    }
+
+    .grid-container {
+        width: 78vw;
+        height: 78vw;
+        border-radius: 16px;
+    }
+
+    .project-showcase {
+        width: min(520px, 92%);
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .project-copy {
+        padding: 0.85rem 0.9rem 1rem;
+    }
+
+    .project-name {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 0.88rem;
+    }
+
+    .mail-card {
+        width: 100%;
+    }
+}
